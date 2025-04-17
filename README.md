@@ -4,22 +4,55 @@ Manipulating the CSV files.
 
 ## :speaking_head: Overview
 
-
+This is a simple CLI tool that can manipulate CSV files.
+This is an example in my course in the Graduate School.
 
 ## :runner: Usage
 
 ```sh
-spotcsv <COMMANDs...> [CSV]
+spotcsv <COMMANDs...> [CSV_FILE]
 COMMAND
-    except <INDECES>
     headers
-    lines <NUMBER>
-    select <INDECES>
+    head    <NUMBERS>
+    tail    <NUMBERS>
+    lines   <RANGES>
+    select  <INDECES>
+    except  <INDECES>
+CSV_FILE
+    The manipulation target CSV file. If not given, stdin is used.
 ```
 
 ### :walking: Demo​
 
-
+```sh
+$ cat testdata/sample.csv
+ID,owner,repo
+1,tamada,spotcsv
+2,tamada,wildcherry
+3,tamada,wildcat
+4,tamada,sibling
+5,tamada,btmeister
+6,tamada,gixor
+7,tamada,totebag
+8,tamada,pochi
+$ spotcsv headers testdata/sample.csv
+ID
+owner
+repo
+$ spotcsv lines 2-4 testdata/sample.csv
+2,tamada,wildcherry
+3,tamada,wildcat
+$ spotcsv except 1 testdata/sample.csv
+owner,repo
+tamada,spotcsv
+tamada,wildcherry
+tamada,wildcat
+tamada,sibling
+tamada,btmeister
+tamada,gixor
+tamada,totebag
+tamada,pochi
+```
 
 ## :smile: About
 
