@@ -16,8 +16,9 @@ COMMAND
     head    <NUMBERS>
     tail    <NUMBERS>
     lines   <RANGES>
-    select  <INDECES>
+    index   <INDECES>
     except  <INDECES>
+    format  <FORMATTER>
 CSV_FILE
     The manipulation target CSV file. If not given, stdin is used.
 ```
