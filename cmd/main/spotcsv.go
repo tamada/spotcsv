@@ -1,16 +1,13 @@
 package main
 
 import (
-	"fmt"
 	"os"
+
+	"github.com/tamada/spotcsv/cmd/main/commands"
 )
 
-func hello() string {
-	return "Hello, World!"
-}
-
 func goMain(args []string) int {
-	fmt.Println(hello())
+	commands.Execute(args)
 	return 0
 }
 

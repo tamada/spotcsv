@@ -1,6 +1,13 @@
 # spotcsv
 
-Manipulating the CSV files.
+[![build](https://github.com/tamada/spotcsv/actions/workflows/build.yaml/badge.svg)](https://github.com/tamada/spotcsv/actions/workflows/build.yaml)
+[![Coverage Status](https://coveralls.io/repos/github/tamada/spotcsv/badge.svg?branch=main)](https://coveralls.io/github/tamada/spotcsv?branch=main)
+[![Go Report Card](https://goreportcard.com/badge/github.com/tamada/spotcsv)](https://goreportcard.com/report/github.com/tamada/spotcsv)
+
+![Version](https://img.shields.io/badge/Version-$VERSION-blue)
+[![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
+
+A tool for manipulating the CSV files.
 
 ## :speaking_head: Overview
 
@@ -16,8 +23,8 @@ COMMAND
     head    <NUMBERS>
     tail    <NUMBERS>
     lines   <RANGES>
-    index   <INDECES>
-    except  <INDECES>
+    index   <INDEXES>
+    except  <INDEXES>
     format  <FORMATTER>
 CSV_FILE
     The manipulation target CSV file. If not given, stdin is used.
