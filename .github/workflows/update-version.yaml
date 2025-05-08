@@ -14,7 +14,7 @@ jobs:
         id: vars
         run: |
           echo "branch=${GITHUB_REF#refs/heads/}" >> $GITHUB_OUTPUT
-          echo "tag=${GITHUB_REF##**/v}" >> $GITHUB_OUTPUT
+          echo "tag=${GITHUB_REF##*/v}" >> $GITHUB_OUTPUT
 
       - uses: extractions/setup-just@v3
         with:

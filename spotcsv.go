@@ -8,12 +8,12 @@ import (
 )
 
 type Indexes struct {
-	Indexces []uint
+	Indexes []uint
 }
 
 func NewIndexes(indexces []uint) *Indexes {
 	return &Indexes{
-		Indexces: indexces,
+		Indexes: indexces,
 	}
 }
 
